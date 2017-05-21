@@ -30,4 +30,17 @@ fun main(args: Array<String>) {
     println(describe(2))
     println(describe(2.134))
     println(describe("other"))
+
+    val a: Int = if (true) 1 else 0
+    println(a)
+
+    val b: Int = 3
+    val max = if (a > b) {
+        println("choose a")
+        a
+    } else {
+        println("choose b")
+        b
+    }
+    println(max)
 }
